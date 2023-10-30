@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+export const ROUTES_NAME = {
+  CLIENT: 'client'
+}
+
 const routes: Routes = [{
   path: '',
   children: [
