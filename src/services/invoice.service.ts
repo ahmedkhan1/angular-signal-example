@@ -11,7 +11,7 @@ export class InvoiceService {
   readonly invoiceListUrl = 'assets/invoice-list.json';
   readonly invoiceList: WritableSignal<Invoice[] | null> = signal(null);
 
-  private clientId: number;
+  private clientId: number | null = null;
   private httpClient = inject(HttpClient);
 
   constructor() {
