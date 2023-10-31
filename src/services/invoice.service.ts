@@ -36,10 +36,10 @@ export class InvoiceService {
 
   private listenEffects(): void {
     effect(() => {
-      if (this.invoiceList() === null) {
-        return;
-      }
+      if (this.invoiceList() === null) return;
+
       console.log('Guardando listado en localStorage...');
+      
       localStorage.setItem(
         `${this.localStorageItemName}-${this.clientId}`, 
         JSON.stringify(this.invoiceList())
