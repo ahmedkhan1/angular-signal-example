@@ -40,7 +40,10 @@ export class InvoiceService {
         return;
       }
       console.log('Guardando listado en localStorage...');
-      localStorage.setItem(`${this.localStorageItemName}-${this.clientId}`, JSON.stringify(this.invoiceList()));
+      localStorage.setItem(
+        `${this.localStorageItemName}-${this.clientId}`, 
+        JSON.stringify(this.invoiceList())
+      );
     });
   }
 }
