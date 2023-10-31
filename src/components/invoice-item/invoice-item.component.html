@@ -5,12 +5,14 @@
       <div> Total bill: {{ item.amount }} € </div>
       <div> 
         Estado: 
-        <span [ngClass]="{'badge text-bg-success': item.status === INVOICE_STATUS.DONE}" class="badge text-bg-success"> {{ item.status }}</span> 
+        <span [ngClass]="{'badge text-bg-success': item.status === INVOICE_STATUS.DONE}" class="badge text-bg-success"> 
+          {{ item.status }}
+        </span> 
       </div>
     </div>
     <div>
       <button class="btn btn-success" *ngIf="item.status === INVOICE_STATUS.PENDING" (click)="changeToDone()">
-        Pasar a done
+        Go to done
       </button>
       <button class="btn btn-secondary" *ngIf="item.status === INVOICE_STATUS.DONE" (click)="changeToPending()">
         Pasar a pending
