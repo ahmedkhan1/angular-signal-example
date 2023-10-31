@@ -1,6 +1,8 @@
 # Angular Signals App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+This project contains an example of how Signals work in Angular.
+
+This was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
 ## Development server
 
